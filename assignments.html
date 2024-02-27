@@ -12,70 +12,88 @@
         .first {
             padding: 0.7rem;
         }
+
+        .navbar .btn {
+            margin-right: 5px;
+        }
     </style>
 </head>
 
 <body>
-
-    <nav class="navbar bg-body-tertiary first">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary first">
         <div class="container-fluid">
             <a class="navbar-brand">ATS</a>
-            <form class="d-flex" role="search">
-                <a href="assignments.html" class="btn btn-outline-primary" type="submit">Assignment</a>
-                <a href="dashboard.html" class="btn btn-outline-primary" type="submit">Dashboard</a>
-                <a href="login.html" class="btn btn-outline-primary" type="submit">Logout</a>
-            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="assignments.html">Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+
     <div class="p-3">
-
-        <table class="table table-bordered table-striped">
-            <thead>
-                <tr>
-                    <th scope="col">DATE</th>
-                    <th scope="col">ASSIGNMENT NO</th>
-                    <th scope="col">TYPE</th>
-                    <th scope="col">LINK TO ASSIGNMENT</th>
-                    <th scope="col">DUE</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>MATH</td>
-                    <td>https://getbootstrap.com/docs/4.3/utilities/spacing/</td>
-                    <td>@mdo</td>
-                    <td><button class="btn btn-outline-success btn-sm">ACCEPT</button>
-                        <button class="btn btn-outline-danger btn-sm">REJECT</button>
-                    </td>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>MATH</td>
-                    <td>https://getbootstrap.com/docs/4.3/utilities/spacing/</td>
-                    <td>@fat</td>
-                    <td><button class="btn btn-outline-success btn-sm">ACCEPT</button>
-                        <button class="btn btn-outline-danger btn-sm">REJECT</button>
-                    </td>
-
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>MATH</td>
-                    <td>https://getbootstrap.com/docs/4.3/utilities/spacing/Bird</td>
-                    <td>@twitter</td>
-                    <td><button class="btn btn-outline-success btn-sm">ACCEPT</button>
-                        <button class="btn btn-outline-danger btn-sm">REJECT</button>
-                    </td>
-
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">DATE</th>
+                        <th scope="col">ASSIGNMENT NO</th>
+                        <th scope="col">TYPE</th>
+                        <th scope="col">DUE</th>
+                        <th scope="col">ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">2004-12-12</th>
+                        <td><a href="https://getbootstrap.com/docs/4.3/utilities/spacing/">1</a></td>
+                        <td>MATH</td>
+                        <td>@mdo</td>
+                        <td>
+                            <button class="btn btn-outline-success btn-sm">ACCEPT</button>
+                            <button class="btn btn-outline-danger btn-sm">REJECT</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2004-12-12</th>
+                        <td><a href="https://getbootstrap.com/docs/4.3/utilities/spacing/">2</a></td>
+                        <td>MATH</td>
+                        <td>@fat</td>
+                        <td>
+                            <button class="btn btn-outline-success btn-sm">ACCEPT</button>
+                            <button class="btn btn-outline-danger btn-sm">REJECT</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2004-12-12</th>
+                        <td><a href="https://getbootstrap.com/docs/4.3/utilities/spacing/">3</a></td>
+                        <td>MATH</td>
+                        <td>@twitter</td>
+                        <td>
+                            <button class="btn btn-outline-success btn-sm">ACCEPT</button>
+                            <button class="btn btn-outline-danger btn-sm">REJECT</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
